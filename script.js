@@ -10,10 +10,10 @@ let dog = document.querySelector(".dog");
 let bat = document.querySelector(".bat");
 let barn = document.querySelector(".barn");
 let nest = document.querySelector(".nest");
-//dog.style.display = "none"
-//bat.style.display = "none"
-//barn.style.display = "none"
-//nest.style.display = "none"
+dog.style.display = "none"
+bat.style.display = "none"
+barn.style.display = "none"
+nest.style.display = "none"
 
 results.addEventListener('click', function(){
     console.log("Scadooooooosh");
@@ -32,9 +32,21 @@ results.addEventListener('click', function(){
       console.log("Pow");
   }
 
+  if (!isEven){
+    console.log("Wow");
+}
+
   if(isEven && mood === "Happy"){
-
-
+    barn.style.display = "block";
+  }
+  else if(isEven && mood === "Sad"){
+    nest.style.display = "block";
+  }
+  else if(!isEven && mood === "Happy"){
+    dog.style.display = "block";
+  }
+  else if(!isEven && mood === "Sad"){
+    bat.style.display = "block";
   }
     
 });
