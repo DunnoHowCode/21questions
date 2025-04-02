@@ -1,12 +1,17 @@
 body{
-    background-color: purple;
+    background-color: #f2813cff;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-content: column;
 }
 
 .header {
-    color: rgb(0, 255, 34);
+    width: 50%;
+    height: 10%;
 }
 
 img {
-    height: 300px;
-    width: 700px;
+    height: 80%;
+    width: 90%;
 }

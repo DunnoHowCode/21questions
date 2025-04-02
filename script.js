@@ -21,31 +21,41 @@ results.addEventListener('click', function(){
     console.log(mood);
     number = Number(number.value);
     console.log(number);
+    let x; 
     isEven(number);
 
-    function isEven(n) {
-      n = Number(n);
-    console.log(n === 0 || !!(n && !(n%2))); 
+    function isEven(number) {
+   
+x = (number === 0 || !!(number && !(number%2))); 
+
+console.log(x);
+
     }
+
+    console.log(x + "boval");
     
-    if (isEven){
-      console.log("Pow");
+    // function isOdd(number) {
+    //   console.log(isEven(Number(number) + 1));
+    // }
+
+    if (x === false){
+      console.log("Pow true");
   }
 
-  if (!isEven){
-    console.log("Wow");
+  if (x === true){
+    console.log("Wow false");
 }
 
-  if(isEven && mood === "Happy"){
-    barn.style.display = "block";
+   if(x === true && mood === "Happy"){
+     barn.style.display = "block";
   }
-  else if(isEven && mood === "Sad"){
+  if(x === true && mood === "Sad"){
     nest.style.display = "block";
   }
-  else if(!isEven && mood === "Happy"){
+  if(x === false && mood === "Happy"){
     dog.style.display = "block";
   }
-  else if(!isEven && mood === "Sad"){
+  if(x === false && mood === "Sad"){
     bat.style.display = "block";
   }
     
