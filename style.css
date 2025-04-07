@@ -9,6 +9,7 @@ body{
     width: 600px;
     margin: 0 auto;
     background-color: #f2813cff;
+    border: solid black;
 }
 
 .header {
@@ -36,4 +37,9 @@ input{
 .buttun{
     margin: 0 auto;
     width: 61%;
+}
+
+.bgColor{
+    background-color: #dcc664ff;
+
 }
