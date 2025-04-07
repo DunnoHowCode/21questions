@@ -1,17 +1,39 @@
 body{
-    background-color: #f2813cff;
+    background-color: #663934ff;
     display: flex;
     justify-content: center;
-    justify-content: space-between;
-    align-content: column;
+    align-items: center;
+}
+
+.layout {
+    width: 600px;
+    margin: 0 auto;
+    background-color: #f2813cff;
 }
 
 .header {
-    width: 50%;
-    height: 10%;
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #dcc664ff;
+    border: solid black;
 }
 
 img {
-    height: 80%;
-    width: 90%;
+    border: solid black;
+    width: 100%
+}
+
+
+input{ 
+    display: block;
+    margin:auto;
+    height: 50px;
+    width: 60%;
+}
+
+button{
+    margin: 0 auto;
+    
 }
