@@ -14,6 +14,7 @@ let bat = document.querySelector(".bat");
 let barn = document.querySelector(".barn");
 let nest = document.querySelector(".nest");
 let duck = document.querySelector(".duck");
+restart.style.display = "none";
 dog.style.display = "none";
 bat.style.display = "none";
 barn.style.display = "none";
@@ -28,7 +29,7 @@ results.addEventListener('click', function(){
     console.log(numberV);
     let x; 
     isEven(numberV);
-
+    restart.style.display = "block";
     function isEven(numberV) {
    
 x = (numberV === 0 || !!(numberV && !(numberV%2))); 
