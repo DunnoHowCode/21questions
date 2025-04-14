@@ -5,7 +5,6 @@ let results = document.querySelector(".results");
 let header = document.querySelector(".header");
 let input = document.querySelector("input");
 let answer = document.querySelector("h1");
-let restart = document.querySelector(".restart");
 
 
 
@@ -14,7 +13,6 @@ let bat = document.querySelector(".bat");
 let barn = document.querySelector(".barn");
 let nest = document.querySelector(".nest");
 let duck = document.querySelector(".duck");
-restart.style.display = "none";
 dog.style.display = "none";
 bat.style.display = "none";
 barn.style.display = "none";
@@ -85,15 +83,4 @@ console.log(x);
     bat.style.display = "block";
   }
     
-});
-
-restart.addEventListener('click', function(){
-  dog.style.display = "none";
-  bat.style.display = "none";
-  barn.style.display = "none";
-  nest.style.display = "none";
-  duck.style.display = "block";
-  number.style.display = "block";
-  mood.style.display = "block";
-  results.style.display = "block";
 });

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
 body{
     background-color: #663934ff;
     display: flex;
@@ -18,12 +20,15 @@ body{
     justify-content: center;
     margin: 0 auto;
     background-color: #dcc664ff;
-    border: solid black;
+    border: solid black; font-family: "Alfa Slab One", serif;
+    font-style: normal;
 }
-
+h1{
+    font-size: 150%;
+}
 img {
     border: solid black;
-    width: 100%
+    width: 99%
 }
 
 
