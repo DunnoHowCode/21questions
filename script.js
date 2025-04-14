@@ -1,12 +1,13 @@
 let mood = document.querySelector(".mood");
+console.log(mood);
 let number = document.querySelector(".number");
 let results = document.querySelector(".results");
 let header = document.querySelector(".header");
 let input = document.querySelector("input");
 let answer = document.querySelector("h1");
-console.log(mood);
-console.log(number);
-console.log(results);
+let restart = document.querySelector(".restart");
+
+
 
 let dog = document.querySelector(".dog");
 let bat = document.querySelector(".bat");
@@ -21,16 +22,16 @@ duck.style.display = "block";
 
 results.addEventListener('click', function(){
     console.log("Scadooooooosh");
-    mood = mood.value;
-    console.log(mood);
-    number = Number(number.value);
-    console.log(number);
+    let moodV =  mood.value;
+    console.log(moodV);
+    let numberV = Number(number.value);
+    console.log(numberV);
     let x; 
-    isEven(number);
+    isEven(numberV);
 
-    function isEven(number) {
+    function isEven(numberV) {
    
-x = (number === 0 || !!(number && !(number%2))); 
+x = (numberV === 0 || !!(numberV && !(numberV%2))); 
 
 console.log(x);
 
@@ -50,33 +51,48 @@ console.log(x);
     console.log("Wow false");
 }
 
-   if(x === true && mood === "Happy"){
+   if(x === true && moodV === "Happy"){
     answer.innerHTML = "Your word is...";
     duck.style.display = "none";
-    input.style.display = "none";
+    number.style.display = "none";
+    mood.style.display = "none";
     results.style.display = "none";
     barn.style.display = "block";
   }
   if(x === true && mood === "Sad"){
     answer.innerHTML = "Your word is...";
     duck.style.display = "none";
-    input.style.display = "none";
+    number.style.display = "none";
+    mood.style.display = "none";
     results.style.display = "none";
     nest.style.display = "block";
   }
   if(x === false && mood === "Happy"){
     answer.innerHTML = "Your word is...";
     duck.style.display = "none";
-    input.style.display = "none";
+    number.style.display = "none";
+    mood.style.display = "none";
     results.style.display = "none";
     dog.style.display = "block";
   }
   if(x === false && mood === "Sad"){
     answer.innerHTML = "Your word is...";
     duck.style.display = "none";
-    input.style.display = "none";
+    number.style.display = "none";
+    mood.style.display = "none";
     results.style.display = "none";
     bat.style.display = "block";
   }
     
+});
+
+restart.addEventListener('click', function(){
+  dog.style.display = "none";
+  bat.style.display = "none";
+  barn.style.display = "none";
+  nest.style.display = "none";
+  duck.style.display = "block";
+  number.style.display = "block";
+  mood.style.display = "block";
+  results.style.display = "block";
 });
