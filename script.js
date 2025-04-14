@@ -60,7 +60,7 @@ console.log(x);
     results.style.display = "none";
     barn.style.display = "block";
   }
-  if(x === true && mood === "Sad"){
+  if(x === true && moodV === "Sad"){
     answer.innerHTML = "Your word is...";
     duck.style.display = "none";
     number.style.display = "none";
@@ -68,7 +68,7 @@ console.log(x);
     results.style.display = "none";
     nest.style.display = "block";
   }
-  if(x === false && mood === "Happy"){
+  if(x === false && moodV === "Happy"){
     answer.innerHTML = "Your word is...";
     duck.style.display = "none";
     number.style.display = "none";
@@ -76,7 +76,7 @@ console.log(x);
     results.style.display = "none";
     dog.style.display = "block";
   }
-  if(x === false && mood === "Sad"){
+  if(x === false && moodV === "Sad"){
     answer.innerHTML = "Your word is...";
     duck.style.display = "none";
     number.style.display = "none";
